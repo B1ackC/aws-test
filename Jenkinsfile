@@ -29,10 +29,11 @@ pipline {
         }
     }
     post {
-    success {
-        echo "배포 완료"
-    }
-    failure {
-        echo "배포 실패"
+        success {
+            echo "배포 완료"
+        }
+        failure {
+            echo "배포 실패"
+        }
     }
 }
