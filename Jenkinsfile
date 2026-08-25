@@ -6,10 +6,10 @@ pipeline {
         AWS_DEFAULT_REGION = 'ap-northeast-2'
     }
     stages {
-        stage ('Checkout')
-        steps {
-            //Github
-            git credentialsId: 'github-token', url: 'https://github.com/B1ackC/aws-test.git', branch: 'main'
+        stage('Checkout') {
+            steps {
+                git credentialsId: 'github-token', url: 'https://github.com/B1ackC/aws-test.git', branch: 'main'
+            }
         }
 
         stage('Install Dependencies') {
